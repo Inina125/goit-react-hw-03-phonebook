@@ -10,6 +10,7 @@ class ContactForm extends Component {
     const name = form.elements.name.value;
     const number = form.elements.number.value;
     this.props.newContact({ name, number });
+    form.reset();
   };
 
   render() {
